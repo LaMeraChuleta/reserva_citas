@@ -1,0 +1,8 @@
+Lista de Consultorios
+N°,Nombre del Doctor,Especialidad
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,Paola Itzel Valerio,Oncologia
+2,Norma Elizabeth Torres,Cardiologia
+3,Anabel Torres Sosa,Odontologia
+4,Jose Ernesto Palma,Psicologia
+5,Emiliano Torres Luis,Pediatra
