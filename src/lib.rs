@@ -1,7 +1,6 @@
 extern crate getopts;
 use getopts::Options;
 
-
 pub mod hospital{    
 
     use std::str;
@@ -184,8 +183,7 @@ pub mod hospital{
                 Ok(l) => l,
                 Err(e) =>panic!("{}",e)
             };    
-            s
-            
+            s            
         }
         fn get_indice(_dia: &String, _hora: &String) -> u8 {
             
@@ -225,8 +223,7 @@ pub mod hospital{
                 }                                                   
             };           
             nombre_fichero
-        }  
-      
+        }        
     }
 }
 pub fn inicia_opciones() -> Options {    
