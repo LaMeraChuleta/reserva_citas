@@ -22,23 +22,20 @@ fn main() {
     else {
         let _comando =  Comando::nuevo(&args);
         
-        if matches.opt_present("c") {         
-            if let Err(_) = _comando.generar_tabla(){
+        if matches.opt_present("c") && _comando.generar_tabla().is_err() {
                 println!("Ocurrio un Error :(");
                 std::process::exit(1);
-          }  
+
         }
-        if matches.opt_present("r"){                    
-            if let Err(_) = _comando.reservar_cita(){
+        if matches.opt_present("r") && _comando.reservar_cita().is_err() {
                 println!("Ocurrio un Error :(");
                 std::process::exit(1);
-          }  
         }    
-        if matches.opt_present("h") {               
-          if let Err(_) = _comando.generar_tabla(){
-                println!("Ocurrio un Error :(");
-                std::process::exit(1);
-          }     
+        if matches.opt_present("h") && _comando.generar_tabla().is_err() {               
+      
+            println!("Ocurrio un Error :(");
+            std::process::exit(1);
+           
         }
     }
 }

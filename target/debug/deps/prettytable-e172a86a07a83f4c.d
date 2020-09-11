@@ -1,0 +1,10 @@
+C:\Users\Desarrollo3\Desktop\reserva_citas\target\debug\deps\prettytable-e172a86a07a83f4c.rmeta: C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\lib.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\cell.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\row.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\format.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\utils.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\csv.rs
+
+C:\Users\Desarrollo3\Desktop\reserva_citas\target\debug\deps\prettytable-e172a86a07a83f4c.d: C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\lib.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\cell.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\row.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\format.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\utils.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\csv.rs
+
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\lib.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\cell.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\row.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\format.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\utils.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\prettytable-rs-0.8.0\src\csv.rs:

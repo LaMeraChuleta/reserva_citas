@@ -20,9 +20,9 @@ pub mod hospital{
         indice: u8
     }
     impl  Comando {        
-        pub fn nuevo(args: &Vec<String>) -> Self {
+        pub fn nuevo(args: &[String]) -> Self {
                                                 
-            let new_comando = match args[2].as_str() {
+            match args[2].as_str() {
                 "-c" => {
                     Comando{
                         fichero : "info_consultorio.txt".to_string(),
@@ -48,8 +48,7 @@ pub mod hospital{
                     println!("No existe esa opcion!!\n");
                     std::process::exit(1);
                 }             
-            };                              
-            new_comando            
+            }                                       
         }
         pub fn generar_tabla(&self) -> Result<(), Box<dyn Error>> {
 
@@ -76,7 +75,7 @@ pub mod hospital{
                 Some(act) => act,
                 None => String::from("Sin Row Active"),
             };
-            let row_active: Vec<&str> = row_active.split(",").collect();
+            let row_active: Vec<&str> = row_active.split(',').collect();
         
             //CREACION DE TITULO Y ROW INFO
             table.set_titles(Row::new(vec![
@@ -125,7 +124,7 @@ pub mod hospital{
                                                     
             let mut buf = BufReader::new(&contenido);
             let  buf = buf.fill_buf()?;    
-            let line = buf.lines().into_iter().map(|l| {                        
+            let line = buf.lines().map(|l| {                        
                                     l.unwrap()                            
                             });
             //BUFFER DEL FICHERO MANDADO
@@ -142,23 +141,23 @@ pub mod hospital{
                         let nuevo_parrafo = format!("{}\n",nuevo);
                         otro_contenido.write_all(&nuevo_parrafo.into_bytes())?;
                     }
-                    else{  
-                        if row_count != 8{
-                            let nuevo_parrafo = format!("{}\n",&item);            
-                            otro_contenido.write_all(&nuevo_parrafo.into_bytes())?;
-                        }
-                        else{
-                            let nuevo_parrafo = format!("{}",&item);            
-                            otro_contenido.write_all(&nuevo_parrafo.into_bytes())?;
-                        }
-                    }            
-                row_count += 1;                    
-            }
+                    else if row_count != 8{
+                        let nuevo_parrafo = format!("{}\n",&item);            
+                        otro_contenido.write_all(&nuevo_parrafo.into_bytes())?;
+                    }
+                    else{
+                        let nuevo_parrafo = item.to_string();          
+                        otro_contenido.write_all(&nuevo_parrafo.into_bytes())?;
+                    }
+                    row_count += 1;   
+            }            
+                              
+        
             Ok(())
         }    
-        fn confirmar_cita(v: &String, indice: u8) -> String {
+        fn confirmar_cita(v: &str, indice: u8) -> String {
 
-            let info_cupo = v.clone();    
+            let info_cupo = v.to_string();    
             let mut bytes = info_cupo.into_bytes();        
             let refbytes  = bytes.as_mut_slice();
             let mut condator_indice: u8 = 1;
@@ -179,16 +178,16 @@ pub mod hospital{
                     condator_indice += 1;
                 }      
             }    
-            let s = match String::from_utf8(bytes){
+            match String::from_utf8(bytes){
                 Ok(l) => l,
                 Err(e) =>panic!("{}",e)
-            };    
-            s            
+            }    
+                        
         }
-        fn get_indice(_dia: &String, _hora: &String) -> u8 {
+        fn get_indice(_dia: &str, _hora: &str) -> u8 {
             
             let mut indice: u8 = 0;
-            indice += match _dia.as_str() {
+            indice += match _dia {
                 "lunes" => 0,
                 "martes" => 1,
                 "miercoles" => 2,
@@ -200,7 +199,7 @@ pub mod hospital{
                     std::process::exit(1);
                 }
             };
-            indice += match _hora.as_str() {
+            indice += match _hora {
                 "8-9" => 1,
                 "9-10" => 7,
                 "10-11" => 13,
@@ -213,16 +212,16 @@ pub mod hospital{
             };           
             indice
         }   
-        fn get_nombre_fichero(_id: &String) -> String {
+        fn get_nombre_fichero(_id: &str) -> String {
                 
-            let nombre_fichero = match _id.as_str() {
+            match _id {
                 "1" | "2" | "3" | "4" | "5" => format!("consultorio{}.txt", _id),                                    
                 _ =>  {
                     println!("No existe ese consultorio!!\n");
                     std::process::exit(1);
                 }                                                   
-            };           
-            nombre_fichero
+            }           
+            
         }        
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\Desarrollo3\Desktop\reserva_citas\target\debug\deps\term-75d3d02d6c19b1e7.rmeta: C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\lib.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\mod.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\searcher.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parser\compiled.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parser\names.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parm.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\win.rs
+
+C:\Users\Desarrollo3\Desktop\reserva_citas\target\debug\deps\term-75d3d02d6c19b1e7.d: C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\lib.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\mod.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\searcher.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parser\compiled.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parser\names.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parm.rs C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\win.rs
+
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\lib.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\mod.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\searcher.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parser\compiled.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parser\names.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\terminfo\parm.rs:
+C:\Users\Desarrollo3\.cargo\registry\src\github.com-1ecc6299db9ec823\term-0.5.2\src\win.rs:
